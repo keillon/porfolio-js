@@ -1,0 +1,113 @@
+.acordeon {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  margin: 0 auto;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  margin-bottom: 1.5rem;
+}
+.acordeon.open,
+.acordeon:hover {
+  background: #55569e;
+  border-color: #55569e;
+}
+
+.acordeon.open .btn-acordeon img {
+  transition: .5s ease;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+
+.acordeon .btn-acordeon {
+  display: flex;
+  font-weight: 800;
+  align-items: center;
+  font-size: 1.7rem;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-acordeon {
+  position: relative;
+}
+
+.btn-acordeon img {
+  transition: .5s ease;
+  position: absolute;
+  width: 1.7rem;
+  right: 1.2rem;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+
+.acordeon-content {
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  display: none;
+  color: white;
+}
+
+.acordeon-content.open {
+  display: block;
+}
+
+/* items buttom */
+.ul-portfolio li{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1;
+}
+.ul-portfolio{
+  margin-bottom: 1rem;
+}
+
+.li--bottom{
+  margin-top: .5rem;
+}
+
+.ul-portfolio a{
+  color: white;
+}
+
+.ul-portfolio img{
+  width: 1.5rem;
+}
+/* items buttom */
+
+
+/* media query */
+@media (width > 768px){
+  .acordeon{
+    width: 600px;
+  }
+}
+
+/* media query */

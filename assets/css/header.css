@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+
+.header h1{
+    color: white;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: relative;
+}
+
+.nav:after{
+    color: white;
+    font-size: 3rem;
+    content: '...';
+    position: absolute;
+    right: .2rem;
+    top: -.9rem;
+}
+
+.header .photo--nav{
+    width: 15rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.contact--nav a{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.contact--nav img{
+    width: 1.5rem;
+}
